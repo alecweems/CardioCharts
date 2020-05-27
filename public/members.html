@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Members Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout" style="color: antiquewhite;">
+          Logout
+        </a>
+        <a class="navbar-brand" href="/progress" style="color: antiquewhite;">
+          Progress
+        </a>
+        <a class="navbar-brand" href="/tools" style="color: antiquewhite;">
+          Tools
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 class="form-top">Welcome <span class="member-name"></span></h2>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <form id="activities">
+          <h4 class="exercise-choice text-center">Please Select Your Exercise</h4>
+          <input class="actType" type="radio" name="activity" id="walking" value="walking" data-type="walking">
+          <label for="walking">Walking</label>
+          <input class="actType" type="radio" name="activity" id="running" value="running"data-type="running">
+          <label for="running">Running</label>
+          <input class="actType" type="radio" name="activity" id="swimming" value="swimming"data-type="swimming">
+          <label for="swimming">Swimming</label>
+          <input class="actType" type="radio" name="activity" id="cycling" value="cycling"data-type="cycling">
+          <label for="cycling">Cycling</label>
+          <input type="submit" class="btn btn-default" id="act-btn" onclick="progressToggle()">
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="progress-entries" style="visibility: hidden;">
+    <div class="row">
+      <div class="col-md-3 col-md-offset-3">
+        <form class="form-inline">
+          <div class="form-group mb-2">
+            <br>
+            <input type="text" class="form-control" id="distance" placeholder="Distance (miles or meters)">
+          </div>
+        <!-- Going to add dropdown selections for miles and meters -->
+        </form>
+      </div>
+
+
+      <div class="col-md-3">
+        <form class="form-inline">
+          <div class="form-group mb-2">
+            <br>
+            <input type="text" class="form-control" id="time" placeholder="Duration (minutes)">
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <br>
+        <p> <input type="date" id="calendar-drop" class="form-control" placeholder="mm/dd/yyyy"></div> </p>
+      </div>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <button type="button" class="btn btn-default btn-lg" id="final-submit">Submit</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>

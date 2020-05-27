@@ -1,0 +1,133 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+.navbar-default {
+  background-color: navy;
+}
+
+.navbar-brand, #login, #signin {
+  color: antiquewhite;
+}
+
+body {
+  background-image:url(https://cdn.pixabay.com/photo/2016/11/10/15/24/runner-1814460_960_720.jpg);
+  background-size: cover;
+  color:black;
+  font-weight: bolder;
+  font-size: 24px
+}
+
+
+.form-top, h2 {
+  font-size: 35px;
+}
+
+#chart {
+  background-color: white;
+}
+
+.calc, .login, .signup, #activities, .table {
+  border-style: double;
+  border-color: navy;
+  border-width: thick;
+  opacity: 0.85;
+  background-color:gray;
+}
+
+.calc {
+  max-width: 312px;
+  padding-bottom: 20px;
+
+}
+
+.login, .signup {
+  padding: 20px;
+
+}
+
+#activities {
+  padding-bottom: 15px;
+}
+
+h4, #sign-in, #log-in, #result, #range, #mph, label, #mpm, .table {
+  color: antiquewhite;
+  text-shadow: 2px 2px 2px navy;
+}
+
+h4, #sign-in, #log-in {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+#result, #range, #mph, label {
+  font-weight: lighter;
+  font-size: 21px;
+
+}
+
+#mpm {
+  font-weight: lighter;
+  font-size: 20px;
+
+}
+
+#time {
+  width: 306px;
+}
+
+#distance {
+  width: 300px;
+}
+
+#weight, #feet, #inches, #miles, #hours, #minutes, #seconds {
+  /* position: relative; */
+  /* left: 3px; */
+  border-color: #a5a5ad;
+  border-style: outset;
+  border-width: medium;
+  width: 100%;
+  padding: 0.1em;
+  box-sizing: border-box;
+
+}
+
+#bmi-calc, #pace-calc, .btn {
+  border-color: darkgrey;
+  border-style: double;
+  border-width: thin;
+  background-color: navy;
+  color: antiquewhite;
+}
+
+#bmi-calc, #pace-calc {
+  position: relative;
+  left: 103px;
+  margin-bottom: 7px;
+}
+
+.btn {
+  font-size: 13px;
+}
+
+#bmi-form, #pace-form {
+    height: 478px;
+}
+
+
+#title-bar {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.nav-span {
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px grey;
+    font-size: 30px;
+}
